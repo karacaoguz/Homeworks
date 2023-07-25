@@ -4,11 +4,11 @@ public class Book {
     Author author;
     String title;
     int pageCount;
-    String type;
+    BookType type;
     boolean hardCover;
     int currentPage;
 
-    public Book(Author author, String title, int pageCount, String type, boolean hardCover, int currentPage) {
+    public Book(Author author, String title, int pageCount, BookType type, boolean hardCover, int currentPage) {
         this.author = author;
         this.title = title;
         this.pageCount = pageCount;
@@ -41,11 +41,11 @@ public class Book {
         this.pageCount = pageCount;
     }
 
-    public String getType() {
+    public BookType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(BookType type) {
         this.type = type;
     }
 

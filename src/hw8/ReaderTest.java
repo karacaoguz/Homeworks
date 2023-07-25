@@ -4,7 +4,7 @@ public class ReaderTest {
 
     public static void main(String[] args) {
         Author author = new Author("Oğuz Atay");
-        Book book = new Book(author, "sss", 400, "Comic", true, 0);
+        Book book = new Book(author, "sss", 400, BookType.COMIC, true, 0);
         Reader reader = new Reader("Oğuz", 23, "Male");
 
         System.out.println(book.currentPage);
@@ -21,11 +21,12 @@ public class ReaderTest {
         reader.readPage(book, 50);
         System.out.println(book.getCurrentPage());
 
-        Book book2 = new Book(author, "xxx", 500, "Drama", false, 0);
+        Book book2 = new Book(author, "xxx", 500, BookType.SCIENTIFIC, false, 0);
         Reader reader2 = new Reader("Yağız", 13, "Male");
         reader2.read(book2);
         reader2.readPage(book2, 100);
         System.out.println(book2.getCurrentPage());
+        System.out.println(book2.type.getDescription());
     }
 
 }
