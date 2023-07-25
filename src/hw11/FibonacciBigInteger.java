@@ -20,8 +20,5 @@ public class FibonacciBigInteger {
             fibonacci1 = fibonacci2;
             fibonacci2 = fibonacci3;
         }
-        System.out.println();
-
-
     }
 }
